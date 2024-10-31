@@ -24,4 +24,4 @@ sudo docker volume create portainer_data &&
 
 sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.4 &&
 
-sudo curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=tskey-auth-kJ3fVDbF6P11CNTRL-mJq1kZvz8F7LH7gf9NV9F7N2janu4Ys9W
+sudo curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=tskey-auth-k4cCvvtGJA11CNTRL-RTUZSa2gVi6zu68DwMJWi6QzDsaa4CxUg
