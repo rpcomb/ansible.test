@@ -24,3 +24,4 @@ sudo docker volume create portainer_data &&
 
 sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.4 &&
 
+sudo wget https://www.emqx.com/en/downloads/neuron/2.5.3/neuron-2.5.3-linux-amd64.deb && sudo dpkg -i neuron-2.5.3-linux-amd64.deb && sudo apt-mark hold neuron
